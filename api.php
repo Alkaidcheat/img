@@ -1,10 +1,8 @@
 <?php
-//初始化随机数生成器种子，这行代码也可以删除
-$seed = time();
-//获取随机数
-$num = rand(1,45);
-//拼接图片地址
-$picpath = "https://cdn.jsdelivr.net/gh/Alkaidcheat/img/tree/main/".$num.".jpg";
-//重定位到图片
-die(header("Location: $picpath"));
+$arr=file('img.txt');      /* 此处bizhi.txt中img更改为自己对应的txt文件名*/
+$n=count($arr)-1;
+for ($i=1;$i<=1;$i++){
+$x=rand(0,$n);
+header("Location:".$arr[$x],"\n");
+}
 ?>
