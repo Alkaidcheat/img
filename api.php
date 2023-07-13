@@ -4,7 +4,7 @@ $seed = time();
 //获取随机数
 $num = rand(1,45);
 //拼接图片地址
-$picpath = "https://cdn.jsdelivr.net/gh/Alkaidcheat/img/".$num.".jpg";
+$picpath = "https://cdn.jsdelivr.net/gh/Alkaidcheat/img/tree/main/".$num.".jpg";
 //重定位到图片
 die(header("Location: $picpath"));
 ?>
